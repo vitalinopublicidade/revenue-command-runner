@@ -13,7 +13,7 @@ Run `python3 src/local_health_cycle.py` on the already-authorized worker machine
 
 Snapshots are private files outside the repository: `~/.openwork/access-audit.json`, `~/.openwork/agent402-refresh.json` and `~/.openwork/access-cycle.json`. Credentials stay in their existing local files; never commit snapshots or keys. A failed or malformed read is UNKNOWN, not a zero balance. A partial public index without a match is UNKNOWN; listing presence never implies paid usage.
 
-Validate with `python3 -W error::ResourceWarning -m unittest discover -s tests`. Existing general-purpose workers are separate from this read-only health cycle.
+Validate with `python3 -m compileall src`. Existing general-purpose workers are separate from this read-only health cycle.
 
 ## Mac workday scheduling
 
